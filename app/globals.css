@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- Design tokens (Tania warmth + Brittany clarity) --- */
+:root {
+  --bg: 252 250 252; /* near-white with a blush tint */
+  --panel: 255 255 255;
+  --text: 20 18 28; /* deep ink */
+  --muted: 95 90 112;
+  --border: 232 226 240;
+  --accent: 232 121 167; /* blush pink */
+  --accent2: 140 111 255; /* lavender-violet secondary */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: 12 10 18;
+    --panel: 18 14 28;
+    --text: 245 243 250;
+    --muted: 178 170 196;
+    --border: 44 36 60;
+    --accent: 242 140 196;
+    --accent2: 176 158 255;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: rgb(var(--text));
+  background: radial-gradient(900px 500px at 15% 10%, rgba(232, 121, 167, 0.10), transparent 60%),
+    radial-gradient(900px 500px at 80% 15%, rgba(140, 111, 255, 0.10), transparent 60%),
+    rgb(var(--bg));
+}
+
+::selection {
+  background: rgba(232, 121, 167, 0.28);
+}
+
+/* Smooth anchor offset for sticky-ish nav */
+[id] {
+  scroll-margin-top: 96px;
+}
+
