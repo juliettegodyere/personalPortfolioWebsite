@@ -1,4 +1,4 @@
-import { site } from "@/components/content/site";
+import { site, type Project } from "@/components/content/site";
 import { Badge } from "@/components/ui/Badge";
 import { Card } from "@/components/ui/Card";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -11,7 +11,7 @@ export function ProjectsSection() {
     p.tags.some((tag) => tag.toLowerCase().includes("software"))
   );
 
-  const renderProjectCard = (p: (typeof site.projects)[number]) => (
+  const renderProjectCard = (p: Project) => (
     <Card key={p.title} className="group">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <div className="min-w-0">
