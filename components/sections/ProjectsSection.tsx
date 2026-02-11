@@ -18,25 +18,27 @@ export function ProjectsSection() {
           <h3 className="text-lg font-semibold text-text">{p.title}</h3>
           <p className="mt-1 text-sm text-muted">{p.subtitle}</p>
         </div>
-        <div className="flex items-center gap-3 sm:justify-end">
-          {p.imageSrc ? (
-            <div className="hidden h-12 w-20 overflow-hidden rounded-xl border border-border/70 bg-panel/80 sm:block">
-              <img
-                src={p.imageSrc}
-                alt={p.imageAlt ?? p.title}
-                className="h-full w-full object-cover object-center"
-              />
-            </div>
-          ) : null}
-          <div className="flex flex-wrap gap-2">
-            {p.tags.map((t) => (
-              <Badge key={t} className="border-border/70">
-                {t}
-              </Badge>
-            ))}
-          </div>
+        <div className="flex flex-wrap gap-2 sm:justify-end">
+          {p.tags.map((t) => (
+            <Badge key={t} className="border-border/70">
+              {t}
+            </Badge>
+          ))}
         </div>
       </div>
+
+      {p.imageSrc ? (
+        <div className="mt-4">
+          <a
+            href={p.imageSrc}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-xl border border-border bg-panel/60 px-3 py-1.5 text-sm font-medium text-text transition hover:border-accent/50 hover:bg-panel focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2"
+          >
+            View schema
+          </a>
+        </div>
+      ) : null}
 
       <p className="mt-4 max-w-3xl text-pretty text-sm leading-relaxed text-muted">{p.description}</p>
 
@@ -80,7 +82,7 @@ export function ProjectsSection() {
                 See more embedded work
               </a>
             </div>
-            <div className="grid gap-5">{embeddedProjects.map(renderProjectCard)}</div>
+            <div className="grid gap-5">{embeddedProjects.slice(0, 2).map(renderProjectCard)}</div>
           </div>
         )}
 
@@ -97,7 +99,7 @@ export function ProjectsSection() {
                 See more software projects
               </a>
             </div>
-            <div className="grid gap-5">{softwareProjects.map(renderProjectCard)}</div>
+            <div className="grid gap-5">{softwareProjects.slice(0, 2).map(renderProjectCard)}</div>
           </div>
         )}
       </div>

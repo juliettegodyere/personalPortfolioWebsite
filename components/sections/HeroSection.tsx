@@ -9,7 +9,7 @@ export function HeroSection() {
         <div className="flex flex-wrap items-center gap-2">
           <Badge className="border-accent/25">
             <span className="h-2 w-2 rounded-full bg-accent" aria-hidden />
-            Transitioning with intention
+            Embedded &amp; IoT focused
           </Badge>
           <Badge className="border-accent2/25">
             <span className="h-2 w-2 rounded-full bg-accent-2" aria-hidden />
@@ -32,7 +32,7 @@ export function HeroSection() {
         <div className="mt-7 flex flex-wrap gap-3">
           <ButtonLink href="#projects">Explore projects</ButtonLink>
           <ButtonLink href="#timeline" variant="ghost">
-            See my progression
+            View experience timeline
           </ButtonLink>
         </div>
       </div>

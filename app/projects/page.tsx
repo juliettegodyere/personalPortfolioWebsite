@@ -18,8 +18,7 @@ export default function ProjectsArchivePage() {
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted">Projects</p>
               <h1 className="mt-2 text-2xl font-semibold text-text sm:text-3xl">All projects</h1>
               <p className="mt-3 max-w-2xl text-sm text-muted">
-                A more detailed view of my embedded/IoT and software engineering work. Inspired by Brittany
-                Chiang&apos;s project archive layout.
+                A more detailed view of my embedded/IoT and software engineering work.
               </p>
             </div>
             <a

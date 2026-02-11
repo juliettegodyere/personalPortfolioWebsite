@@ -8,7 +8,7 @@ export function AboutSection() {
       <SectionHeading
         eyebrow="About"
         title={site.about.title}
-        subtitle="Your story can be a differentiator. Here’s how I frame mine: not as a switch, but as a deliberate widening of scope."
+        subtitle="Blending strong software engineering experience with hands-on embedded systems, electronics, and IoT."
       />
 
       <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">

@@ -1,5 +1,4 @@
 import { site } from "@/components/content/site";
-import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Card } from "@/components/ui/Card";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
@@ -16,23 +15,24 @@ export function ResumeSection() {
         <Card>
           <h3 className="text-sm font-semibold text-text">Summary</h3>
           <p className="mt-3 text-sm leading-relaxed text-muted">
-            Software Engineer with 5+ years of experience, a Physics with Electronics background, and an MSc in
-            Electronics &amp; Computer Engineering. I&apos;m now focused on embedded systems, electronics, and IoT —
-            using my software foundation to design, debug, and ship reliable device-level systems.
+          Embedded systems and IoT engineer with hands-on experience in microcontrollers, sensors, and electronics. I leverage 5+ years of software engineering experience to design, debug, and ship reliable device-level systems. I work end-to-end, focusing on reliability, maintainability, and clear documentation.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-muted">
-            I enjoy working end-to-end: from understanding requirements and constraints, to designing architecture,
-            implementing features, and communicating clearly with teams and stakeholders.
+          I have experience integrating a variety of hardware components, including sensors, actuators, and microcontrollers, to build functional and scalable IoT devices. I enjoy prototyping, testing, and debugging circuits to ensure devices perform reliably in real-world environments.          
           </p>
+          <p className="mt-3 text-sm leading-relaxed text-muted">
+          I am skilled in communication protocols such as MQTT, I²C, and SPI, enabling efficient data exchange between devices and cloud platforms. I also work with development boards and modules like Arduino, and ESP32 to accelerate prototyping and deployment. </p>
+          <p className="mt-3 text-sm leading-relaxed text-muted">
+          Beyond hardware, I apply software engineering principles to embedded projects, writing clean, modular code for microcontrollers, implementing device-level logic, and integrating cloud or edge computing where needed. This combination ensures my systems are functional, maintainable, and production-ready.</p>
         </Card>
 
         <div className="space-y-3">
           <Card>
             <h3 className="text-sm font-semibold text-text">Highlights</h3>
             <ul className="mt-3 space-y-1.5 text-sm text-muted">
-              <li>• 5 years professional software engineering experience</li>
-              <li>• MSc Electronics &amp; Computer Engineering (University of Birmingham, UK)</li>
-              <li>• Transitioning into embedded systems, electronics, and IoT with hands-on projects</li>
+              <li>• Hands-on experience in embedded systems, IoT, and electronics</li>
+              <li>• Building with microcontrollers, sensors, and device-level code</li>
+              <li>• Strong foundation from 5+ years of software engineering</li>
             </ul>
           </Card>
 
@@ -42,13 +42,17 @@ export function ResumeSection() {
               View the full PDF résumé for detailed roles, responsibilities, and technical skills.
             </p>
             <div className="mt-3">
-              <ButtonLink href={site.resumeUrl} variant="primary">
+              <a
+                href={site.resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-xl bg-accent px-4 py-2 text-sm font-medium text-white shadow-soft transition hover:translate-y-[-1px] hover:bg-accent/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
+              >
                 View full résumé (PDF)
-              </ButtonLink>
+              </a>
             </div>
             <p className="mt-2 text-xs text-muted">
-              Tip: place your PDF at <code className="rounded bg-panel/70 px-1 py-0.5">public/resume.pdf</code> or update{" "}
-              <code className="rounded bg-panel/70 px-1 py-0.5">site.resumeUrl</code>.
+              Opens in your browser&apos;s PDF viewer. Regenerate with <code className="rounded bg-panel/70 px-1 py-0.5">npm run generate-resume</code> after editing <code className="rounded bg-panel/70 px-1 py-0.5">scripts/generate-resume.js</code>.
             </p>
           </Card>
         </div>

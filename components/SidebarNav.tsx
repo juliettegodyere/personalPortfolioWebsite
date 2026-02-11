@@ -16,9 +16,8 @@ export function SidebarNav() {
             <div className="flex items-center gap-3">
               <div className="relative h-14 w-14 shrink-0 rounded-full border border-accent/40 bg-gradient-to-tr from-accent/20 via-panel to-accent-2/25 p-0.5 shadow-soft">
                 <div className="h-full w-full overflow-hidden rounded-full bg-panel">
-                  {/* Replace /avatar.jpg with your actual file name in /public */}
                   <img
-                    src="/avatar.jpg"
+                    src="/avatar.png"
                     alt="Portrait of Juliet Nkwor"
                     className="h-full w-full object-cover"
                   />
@@ -40,9 +39,8 @@ export function SidebarNav() {
             <div className="flex items-center gap-4">
               <div className="relative h-20 w-20 shrink-0 rounded-full border border-accent/40 bg-gradient-to-tr from-accent/20 via-panel to-accent-2/25 p-0.5 shadow-soft">
                 <div className="h-full w-full overflow-hidden rounded-full bg-panel">
-                  {/* Replace /avatar.jpg with your actual file name in /public */}
                   <img
-                    src="/avatar.jpg"
+                    src="/avatar.png"
                     alt="Portrait of Juliet Nkwor"
                     className="h-full w-full object-cover"
                   />
